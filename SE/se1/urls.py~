@@ -1,0 +1,28 @@
+from django.conf.urls import url
+
+from . import views
+
+urlpatterns = [ url(r'^$',views.index,name = 'index'),
+		url(r'^dashboard',views.index1,name='index1'),
+                url(r'^notifications',views.index2,name='index2'),
+		url(r'^table2',views.index9,name = 'index9'),
+		url(r'^table1',views.index8,name = 'index8'),
+		url(r'^table',views.index3,name = 'index3'),
+		url(r'^template',views.index4,name = 'index4'),
+		url(r'^user',views.index5,name = 'index5'),
+                url(r'^add_project',views.index6,name = 'index6'),
+		url(r'^index',views.index7,name = 'index7'),
+		]
+
+urlpatterns = [ url(r'^$',views.renderpolls,name = 'polls'),
+		url(r'^dashboard',views.renderdashboard,name='dashboard'),
+        url(r'^notifications',views.rendernotifications,name='notifications'),
+		url(r'^table1',views.rendertable1,name = 'table1'),
+		url(r'^table2',views.rendertable2,name = 'table2'),
+		url(r'^table',views.rendertable,name = 'table'),
+		url(r'^template',views.rendertemplate,name = 'template'),
+		url(r'^user',views.renderuser,name = 'user'),
+        url(r'^add_project',views.renderadd_project,name = 'add_project'),
+		url(r'^index',views.renderindex,name = 'index'),
+		
+		]
